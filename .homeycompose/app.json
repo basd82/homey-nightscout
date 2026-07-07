@@ -20,7 +20,8 @@
   ],
   "brandColor": "#303030",
   "author": {
-    "name": "B.F. van den Dikkenberg"
+    "name": "B.F. van den Dikkenberg",
+    "email": "bas@dikkenberg.net"
   },
   "license": "GPL-3.0-or-later",
   "images": {
@@ -104,5 +105,38 @@
     }
   ],
   "source": "https://github.com/basd82/homey-nightscout",
-  "support": "https://github.com/basd82/homey-nightscout/issues"
+  "support": "https://github.com/basd82/homey-nightscout/issues",
+  "contributors": {
+    "developers": [
+      {
+        "name": "B.F. van den Dikkenberg",
+        "email": "bas@dikkenberg.net"
+      }
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/basd82/homey-nightscout/issues"
+  },
+  "homepage": "https://github.com/basd82/homey-nightscout",
+  "tags": {
+    "en": [
+      "Nightscout",
+      "glucose",
+      "CGM",
+      "diabetes",
+      "blood glucose"
+    ],
+    "nl": [
+      "Nightscout",
+      "glucose",
+      "CGM",
+      "diabetes",
+      "bloedsuiker"
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "url": "https://paypal.me/BvandenDikkenberg"
+    }
+  }
 }
