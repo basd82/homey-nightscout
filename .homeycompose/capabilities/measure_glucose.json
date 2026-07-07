@@ -1,0 +1,14 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Glucose",
+    "nl": "Glucose"
+  },
+  "icon": "/drivers/nightscout/assets/icons/glucose.svg",
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "min": 0,
+  "max": 1000,
+  "step": 0.1
+}

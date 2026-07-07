@@ -1,9 +1,18 @@
 {
   "name": "nl.bfvddikkenberg.nightscout",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "main": "app.js",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "homey": "^3.0.0"
+  },
+  "author": "B.F. van den Dikkenberg",
+  "homepage": "https://github.com/basd82/homey-nightscout",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basd82/homey-nightscout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/basd82/homey-nightscout/issues"
   }
 }

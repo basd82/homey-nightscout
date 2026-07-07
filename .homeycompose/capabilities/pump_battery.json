@@ -1,0 +1,18 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Pump battery",
+    "nl": "Pompbatterij"
+  },
+  "icon": "/drivers/nightscout/assets/icons/battery.svg",
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "min": 0,
+  "max": 100,
+  "step": 1,
+  "units": {
+    "en": "%",
+    "nl": "%"
+  }
+}

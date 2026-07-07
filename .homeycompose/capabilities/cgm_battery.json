@@ -1,0 +1,18 @@
+{
+  "type": "number",
+  "title": {
+    "en": "CGM battery",
+    "nl": "CGM-batterij"
+  },
+  "icon": "/drivers/nightscout/assets/icons/cgm_battery.svg",
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "min": 0,
+  "max": 100,
+  "step": 1,
+  "units": {
+    "en": "%",
+    "nl": "%"
+  }
+}

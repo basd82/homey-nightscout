@@ -12,8 +12,8 @@
     "nl": "Nightscout Monitor"
   },
   "description": {
-    "en": "Shows Nightscout data on Homey.",
-    "nl": "Toont Nightscout-gegevens op Homey."
+    "en": "Monitor your Nightscout glucose data on Homey and use it in Flows.",
+    "nl": "Toon je Nightscout-glucosegegevens op Homey en gebruik ze in Flows."
   },
   "category": [
     "tools"
@@ -27,6 +27,8 @@
     "small": "/assets/images/small.png",
     "large": "/assets/images/large.png"
   },
+  "source": "https://github.com/basd82/homey-nightscout",
+  "support": "https://github.com/basd82/homey-nightscout/issues",
   "drivers": [
     {
       "name": {

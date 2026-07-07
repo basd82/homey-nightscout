@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Loop status",
+    "nl": "Loopstatus"
+  },
+  "icon": "/drivers/nightscout/assets/icons/loop.svg",
+  "getable": true,
+  "setable": false
+}

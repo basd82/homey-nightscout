@@ -1,0 +1,18 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Reservoir",
+    "nl": "Reservoir"
+  },
+  "icon": "/drivers/nightscout/assets/icons/reservoir.svg",
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "min": 0,
+  "max": 1000,
+  "step": 0.1,
+  "units": {
+    "en": "U",
+    "nl": "E"
+  }
+}

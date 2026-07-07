@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Trend",
+    "nl": "Trend"
+  },
+  "icon": "/drivers/nightscout/assets/icons/trend.svg",
+  "getable": true,
+  "setable": false
+}

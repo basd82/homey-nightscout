@@ -1,0 +1,11 @@
+{
+  "type": "number",
+  "title": { "en": "Reservoir filled", "nl": "Reservoir gevuld" },
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "min": 0,
+  "max": 100,
+  "step": 1,
+  "units": { "en": "%", "nl": "%" }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "number",
+  "title": { "en": "IOB", "nl": "IOB" },
+  "getable": true,
+  "setable": false,
+  "insights": true,
+  "min": 0,
+  "max": 100,
+  "step": 0.01,
+  "units": { "en": "U", "nl": "E" }
+}
