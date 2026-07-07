@@ -134,9 +134,11 @@
       "bloedsuiker"
     ]
   },
-  "contributing": {
-    "donate": {
-      "url": "https://paypal.me/BvandenDikkenberg"
+"contributing": {
+  "donate": {
+    "paypal": {
+      "username": "BvandenDikkenberg"
     }
   }
+}
 }
