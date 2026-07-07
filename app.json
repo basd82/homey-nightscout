@@ -1,0 +1,276 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.bfvddikkenberg.nightscout",
+  "version": "0.1.3",
+  "compatibility": ">=12.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Nightscout Monitor",
+    "nl": "Nightscout Monitor"
+  },
+  "description": {
+    "en": "Shows Nightscout data on Homey.",
+    "nl": "Toont Nightscout-gegevens op Homey."
+  },
+  "category": [
+    "tools"
+  ],
+  "brandColor": "#303030",
+  "author": {
+    "name": "B.F. van den Dikkenberg"
+  },
+  "license": "GPL-3.0-or-later",
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Nightscout",
+        "nl": "Nightscout"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_glucose",
+        "glucose_trend",
+        "glucose_delta",
+        "reservoir",
+        "pump_battery",
+        "cgm_battery",
+        "loop_status"
+      ],
+      "images": {
+        "small": "/drivers/nightscout/assets/images/small.png",
+        "large": "/drivers/nightscout/assets/images/large.png"
+      },
+      "pair": [
+        {
+          "id": "credentials"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          },
+          "options": {
+            "singular": true
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "nightscout",
+      "settings": [
+        {
+          "id": "unit",
+          "type": "dropdown",
+          "label": {
+            "en": "Glucose unit",
+            "nl": "Glucose-eenheid"
+          },
+          "value": "mmol",
+          "values": [
+            {
+              "id": "mmol",
+              "label": {
+                "en": "mmol/L",
+                "nl": "mmol/L"
+              }
+            },
+            {
+              "id": "mgdl",
+              "label": {
+                "en": "mg/dL",
+                "nl": "mg/dL"
+              }
+            }
+          ]
+        },
+        {
+          "id": "refresh_interval",
+          "type": "number",
+          "label": {
+            "en": "Refresh interval seconds",
+            "nl": "Verversinterval seconden"
+          },
+          "value": 60,
+          "min": 30,
+          "max": 3600
+        },
+        {
+          "id": "max_reservoir",
+          "type": "number",
+          "label": {
+            "en": "Maximum reservoir units",
+            "nl": "Maximale reservoirinhoud"
+          },
+          "value": 300,
+          "min": 1,
+          "max": 1000
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "carbs_on_board": {
+      "type": "number",
+      "title": {
+        "en": "COB",
+        "nl": "COB"
+      },
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "min": 0,
+      "max": 1000,
+      "step": 0.1,
+      "units": {
+        "en": "g",
+        "nl": "g"
+      }
+    },
+    "cgm_battery": {
+      "type": "number",
+      "title": {
+        "en": "CGM battery",
+        "nl": "CGM-batterij"
+      },
+      "icon": "/drivers/nightscout/assets/icons/cgm_battery.svg",
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "units": {
+        "en": "%",
+        "nl": "%"
+      }
+    },
+    "glucose_delta": {
+      "type": "number",
+      "title": {
+        "en": "Delta",
+        "nl": "Delta"
+      },
+      "icon": "/drivers/nightscout/assets/icons/delta.svg",
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "min": -1000,
+      "max": 1000,
+      "step": 0.1
+    },
+    "glucose_trend": {
+      "type": "string",
+      "title": {
+        "en": "Trend",
+        "nl": "Trend"
+      },
+      "icon": "/drivers/nightscout/assets/icons/trend.svg",
+      "getable": true,
+      "setable": false
+    },
+    "insulin_on_board": {
+      "type": "number",
+      "title": {
+        "en": "IOB",
+        "nl": "IOB"
+      },
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "min": 0,
+      "max": 100,
+      "step": 0.01,
+      "units": {
+        "en": "U",
+        "nl": "E"
+      }
+    },
+    "loop_status": {
+      "type": "string",
+      "title": {
+        "en": "Loop status",
+        "nl": "Loopstatus"
+      },
+      "icon": "/drivers/nightscout/assets/icons/loop.svg",
+      "getable": true,
+      "setable": false
+    },
+    "measure_glucose": {
+      "type": "number",
+      "title": {
+        "en": "Glucose",
+        "nl": "Glucose"
+      },
+      "icon": "/drivers/nightscout/assets/icons/glucose.svg",
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "min": 0,
+      "max": 1000,
+      "step": 0.1
+    },
+    "pump_battery": {
+      "type": "number",
+      "title": {
+        "en": "Pump battery",
+        "nl": "Pompbatterij"
+      },
+      "icon": "/drivers/nightscout/assets/icons/battery.svg",
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "units": {
+        "en": "%",
+        "nl": "%"
+      }
+    },
+    "reservoir": {
+      "type": "number",
+      "title": {
+        "en": "Reservoir",
+        "nl": "Reservoir"
+      },
+      "icon": "/drivers/nightscout/assets/icons/reservoir.svg",
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "min": 0,
+      "max": 1000,
+      "step": 0.1,
+      "units": {
+        "en": "U",
+        "nl": "E"
+      }
+    },
+    "reservoir_percent": {
+      "type": "number",
+      "title": {
+        "en": "Reservoir filled",
+        "nl": "Reservoir gevuld"
+      },
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "units": {
+        "en": "%",
+        "nl": "%"
+      }
+    }
+  }
+}

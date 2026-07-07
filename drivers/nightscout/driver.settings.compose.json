@@ -1,0 +1,49 @@
+[
+  {
+    "id": "unit",
+    "type": "dropdown",
+    "label": {
+      "en": "Glucose unit",
+      "nl": "Glucose-eenheid"
+    },
+    "value": "mmol",
+    "values": [
+      {
+        "id": "mmol",
+        "label": {
+          "en": "mmol/L",
+          "nl": "mmol/L"
+        }
+      },
+      {
+        "id": "mgdl",
+        "label": {
+          "en": "mg/dL",
+          "nl": "mg/dL"
+        }
+      }
+    ]
+  },
+  {
+    "id": "refresh_interval",
+    "type": "number",
+    "label": {
+      "en": "Refresh interval seconds",
+      "nl": "Verversinterval seconden"
+    },
+    "value": 60,
+    "min": 30,
+    "max": 3600
+  },
+  {
+    "id": "max_reservoir",
+    "type": "number",
+    "label": {
+      "en": "Maximum reservoir units",
+      "nl": "Maximale reservoirinhoud"
+    },
+    "value": 300,
+    "min": 1,
+    "max": 1000
+  }
+]

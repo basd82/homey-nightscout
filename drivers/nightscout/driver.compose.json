@@ -1,0 +1,39 @@
+{
+  "name": {
+    "en": "Nightscout",
+    "nl": "Nightscout"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_glucose",
+    "glucose_trend",
+    "glucose_delta",
+    "reservoir",
+    "pump_battery",
+    "cgm_battery",
+    "loop_status"
+  ],
+  "images": {
+    "small": "/drivers/nightscout/assets/images/small.png",
+    "large": "/drivers/nightscout/assets/images/large.png"
+  },
+  "pair": [
+    {
+      "id": "credentials"
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      },
+      "options": {
+        "singular": true
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "nl.bfvddikkenberg.nightscout",
+  "version": "0.1.3",
+  "main": "app.js",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "homey": "^3.0.0"
+  }
+}
