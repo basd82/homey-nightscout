@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "nl.bfvddikkenberg.nightscout",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "compatibility": ">=12.0.0",
   "sdk": 3,
   "platforms": [
@@ -12,8 +12,8 @@
     "nl": "Nightscout Monitor"
   },
   "description": {
-    "en": "Monitor your Nightscout glucose data on Homey and use it in Flows.",
-    "nl": "Toon je Nightscout-glucosegegevens op Homey en gebruik ze in Flows."
+    "en": "Your glucose data, always within reach.",
+    "nl": "Je glucosegegevens altijd binnen handbereik."
   },
   "category": [
     "tools"
