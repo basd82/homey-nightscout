@@ -14,7 +14,7 @@ class NightscoutDriver extends Homey.Driver {
     });
 
     session.setHandler('list_devices', async () => {
-      if (!credentials) throw new Error('Voer eerst de Nightscout-instellingen in.');
+      if (!credentials) throw new Error(this.homey.__('errors.enter_settings_first'));
 
       return [{
         name: 'Nightscout',

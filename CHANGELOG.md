@@ -15,3 +15,7 @@ Initial public release.
 - Pairing screen with Nightscout connection test
 - Homey Flow-compatible capabilities
 - GPL-3.0-or-later license
+
+## 1.0.2
+
+- Update for Certification standards
