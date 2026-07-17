@@ -1,0 +1,90 @@
+{
+  "title": {
+    "en": "Trend !{{is|isn't}} a selected direction",
+    "nl": "Trend !{{is|is niet}} de gekozen richting"
+  },
+  "titleFormatted": {
+    "en": "Trend !{{is|isn't}} [[trend]]",
+    "nl": "Trend !{{is|is niet}} [[trend]]"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=nightscout"
+    },
+    {
+      "name": "trend",
+      "type": "dropdown",
+      "title": {
+        "en": "Trend",
+        "nl": "Trend"
+      },
+      "values": [
+        {
+          "id": "DoubleUp",
+          "label": {
+            "en": "Double up",
+            "nl": "Dubbel omhoog"
+          }
+        },
+        {
+          "id": "SingleUp",
+          "label": {
+            "en": "Up",
+            "nl": "Omhoog"
+          }
+        },
+        {
+          "id": "FortyFiveUp",
+          "label": {
+            "en": "Rising",
+            "nl": "Stijgend"
+          }
+        },
+        {
+          "id": "Flat",
+          "label": {
+            "en": "Stable",
+            "nl": "Stabiel"
+          }
+        },
+        {
+          "id": "FortyFiveDown",
+          "label": {
+            "en": "Falling",
+            "nl": "Dalend"
+          }
+        },
+        {
+          "id": "SingleDown",
+          "label": {
+            "en": "Down",
+            "nl": "Omlaag"
+          }
+        },
+        {
+          "id": "DoubleDown",
+          "label": {
+            "en": "Double down",
+            "nl": "Dubbel omlaag"
+          }
+        },
+        {
+          "id": "NOT COMPUTABLE",
+          "label": {
+            "en": "Not computable",
+            "nl": "Niet berekenbaar"
+          }
+        },
+        {
+          "id": "RATE OUT OF RANGE",
+          "label": {
+            "en": "Rate out of range",
+            "nl": "Snelheid buiten bereik"
+          }
+        }
+      ]
+    }
+  ]
+}

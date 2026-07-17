@@ -1,0 +1,17 @@
+{
+  "title": {
+    "en": "Nightscout !{{is|isn't}} available",
+    "nl": "Nightscout !{{is|is niet}} bereikbaar"
+  },
+  "hint": {
+    "en": "Checks whether the selected device is currently marked as available by Homey.",
+    "nl": "Controleert of het geselecteerde apparaat momenteel door Homey als beschikbaar is gemarkeerd."
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=nightscout"
+    }
+  ]
+}

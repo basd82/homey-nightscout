@@ -1,0 +1,28 @@
+{
+  "title": {
+    "en": "Reservoir !{{is|isn't}} lower than",
+    "nl": "Reservoir !{{is|is niet}} lager dan"
+  },
+  "titleFormatted": {
+    "en": "Reservoir !{{is|isn't}} lower than [[value]] U",
+    "nl": "Reservoir !{{is|is niet}} lager dan [[value]] E"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=nightscout"
+    },
+    {
+      "name": "value",
+      "type": "number",
+      "title": {
+        "en": "Insulin units",
+        "nl": "Eenheden insuline"
+      },
+      "min": 0,
+      "max": 1000,
+      "step": 0.1
+    }
+  ]
+}

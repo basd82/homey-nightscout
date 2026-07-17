@@ -12,9 +12,5 @@
   "1.1.0": {
     "en": "Added Flow condition cards for glucose, trend, reservoir, batteries and Nightscout availability.",
     "nl": "Flow-voorwaardekaarten toegevoegd voor glucose, trend, reservoir, batterijen en bereikbaarheid van Nightscout."
-  },
-  "1.1.1": {
-    "en": "Improved handling of temporary Nightscout connection failures and removed obsolete IOB/COB capability definitions.",
-    "nl": "Afhandeling van tijdelijke Nightscout-verbindingsfouten verbeterd en verouderde IOB/COB-capabilitydefinities verwijderd."
   }
 }

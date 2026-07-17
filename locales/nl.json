@@ -1,0 +1,12 @@
+{
+  "pair": {
+    "title": "Nightscout-instellingen",
+    "url": "Nightscout URL",
+    "credential": "API-secret of token",
+    "unit": "Glucose-eenheid",
+    "test": "Test verbinding"
+  },
+  "errors": {
+    "enter_settings_first": "Voer eerst de Nightscout-instellingen in."
+  }
+}

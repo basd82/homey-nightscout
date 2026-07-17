@@ -1,0 +1,43 @@
+{
+  "title": {
+    "en": "Glucose !{{is|isn't}} between two values",
+    "nl": "Glucose !{{ligt|ligt niet}} tussen twee waarden"
+  },
+  "titleFormatted": {
+    "en": "Glucose !{{is|isn't}} between [[minimum]] and [[maximum]]",
+    "nl": "Glucose !{{ligt|ligt niet}} tussen [[minimum]] en [[maximum]]"
+  },
+  "hint": {
+    "en": "The limits are inclusive and use the glucose unit configured for the selected device.",
+    "nl": "De grenswaarden tellen mee en gebruiken de ingestelde glucose-eenheid van het geselecteerde apparaat."
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=nightscout"
+    },
+    {
+      "name": "minimum",
+      "type": "number",
+      "title": {
+        "en": "Minimum",
+        "nl": "Minimum"
+      },
+      "min": 0,
+      "max": 1000,
+      "step": 0.1
+    },
+    {
+      "name": "maximum",
+      "type": "number",
+      "title": {
+        "en": "Maximum",
+        "nl": "Maximum"
+      },
+      "min": 0,
+      "max": 1000,
+      "step": 0.1
+    }
+  ]
+}

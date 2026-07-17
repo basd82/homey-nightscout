@@ -35,7 +35,7 @@ class NightscoutDevice extends Homey.Device {
 
     this.lastDirection = null;
 
-    await this.refreshSafely('initial refresh');
+    await this.refresh();
 
     const seconds = Math.max(
       30,
@@ -43,7 +43,7 @@ class NightscoutDevice extends Homey.Device {
     );
 
     this.timer = this.homey.setInterval(
-      () => this.refreshSafely('scheduled refresh'),
+      () => this.refresh().catch(err => this.error(err)),
       seconds * 1000
     );
   }
@@ -61,21 +61,11 @@ class NightscoutDevice extends Homey.Device {
     );
 
     this.timer = this.homey.setInterval(
-      () => this.refreshSafely('scheduled refresh'),
+      () => this.refresh().catch(err => this.error(err)),
       seconds * 1000
     );
 
-    await this.refreshSafely('settings refresh');
-  }
-
-  async refreshSafely(context) {
-    try {
-      await this.refresh();
-      return true;
-    } catch (err) {
-      this.error(`${context} failed:`, err);
-      return false;
-    }
+    await this.refresh();
   }
 
   formatTrend(direction) {

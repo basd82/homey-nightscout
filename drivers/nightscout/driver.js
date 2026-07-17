@@ -1,7 +1,8 @@
 'use strict';
 const Homey = require('homey');
 const NightscoutClient = require('../../lib/nightscout');
-
+// const url = this.getSetting('nightscout_url') || 'nightscout.dikkenberg.net';
+// const credential = this.getSetting('credential') || 'zuster-b7d78a98f3141c55';
 class NightscoutDriver extends Homey.Driver {
   async onPair(session) {
     let credentials = null;

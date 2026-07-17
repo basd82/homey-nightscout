@@ -1,0 +1,28 @@
+{
+  "title": {
+    "en": "Pump battery !{{is|isn't}} lower than",
+    "nl": "Pompbatterij !{{is|is niet}} lager dan"
+  },
+  "titleFormatted": {
+    "en": "Pump battery !{{is|isn't}} lower than [[value]]%",
+    "nl": "Pompbatterij !{{is|is niet}} lager dan [[value]]%"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=nightscout"
+    },
+    {
+      "name": "value",
+      "type": "number",
+      "title": {
+        "en": "Battery percentage",
+        "nl": "Batterijpercentage"
+      },
+      "min": 0,
+      "max": 100,
+      "step": 1
+    }
+  ]
+}

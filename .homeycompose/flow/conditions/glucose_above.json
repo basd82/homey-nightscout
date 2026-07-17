@@ -1,0 +1,32 @@
+{
+  "title": {
+    "en": "Glucose !{{is|isn't}} higher than",
+    "nl": "Glucose !{{is|is niet}} hoger dan"
+  },
+  "titleFormatted": {
+    "en": "Glucose !{{is|isn't}} higher than [[value]]",
+    "nl": "Glucose !{{is|is niet}} hoger dan [[value]]"
+  },
+  "hint": {
+    "en": "Uses the glucose unit configured for the selected Nightscout device.",
+    "nl": "Gebruikt de glucose-eenheid die voor het geselecteerde Nightscout-apparaat is ingesteld."
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=nightscout"
+    },
+    {
+      "name": "value",
+      "type": "number",
+      "title": {
+        "en": "Glucose value",
+        "nl": "Glucosewaarde"
+      },
+      "min": 0,
+      "max": 1000,
+      "step": 0.1
+    }
+  ]
+}
